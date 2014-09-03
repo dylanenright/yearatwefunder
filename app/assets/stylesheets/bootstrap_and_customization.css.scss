@@ -1,0 +1,64 @@
+$navbar-margin-bottom: 0px;
+
+
+@import 'bootstrap';
+
+.outer-container .item{
+ 	
+    background-size: cover;
+
+    position: absolute; /* so that inner-container can be positioned absolutely within this */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.inner-container-rose {
+  	background: rgba(255, 0, 0, 0.2);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+ 
+}
+
+.inner-container-blue {
+  	background: rgba(34, 29, 88, 0.2);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+ 
+}
+.content {
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 5em;
+    position: relative; /* so that z-index works */
+    z-index: 20;
+    text-align: left;
+    margin: 10%;
+}
+
+.carousel-control {
+		z-index: 30;
+	}
+.carousel-indicators {
+		visibility: hidden;
+}
+
+h1 {
+	font-family: sans-serif;
+    font-size: 1em;
+}
+
+p {
+	font-family: sans-serif;
+    font-size: .5em;
+    line-height: 1.1em;
+    text-align: left;
+}
