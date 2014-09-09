@@ -3,8 +3,19 @@ $navbar-margin-bottom: 0px;
 
 @import 'bootstrap';
 
-.outer-container .item{
- 	
+/* Override Bootstrap */
+
+#carousel-example-generic .carousel .slide {
+	top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+	}
+#outer-outer-container{
+	background: black;
     background-size: cover;
 
     position: absolute; /* so that inner-container can be positioned absolutely within this */
@@ -12,38 +23,111 @@ $navbar-margin-bottom: 0px;
     left: 0;
     right: 0;
     bottom: 0;
+    width: 100%;
+    height: 100%;
 }
-.inner-container-rose {
-  	background: rgba(255, 0, 0, 0.2);
+.outer-container .item{
+ 	background: black;
+    background-size: cover;
+
+    position: absolute; /* so that inner-container can be positioned absolutely within this */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+.inner-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 20;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+
+ 
+}
+
+.inner-container-blackout {
+  	background: rgba(0, 0, 0, 1);
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     z-index: 10;
+    width: 100%;
+    height: 100%;
+
+ 
+}
+
+.inner-container-rose {
+  	background: rgba(255, 0, 0, 0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+
  
 }
 
 .inner-container-blue {
-  	background: rgba(34, 29, 88, 0.2);
+  	background: rgba(34, 29, 88, 0.4);
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     z-index: 10;
+    width: 100%;
+    height: 100%;
+
+ 
+}
+
+.inner-container-yellow {
+  	background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+
  
 }
 .content {
     color: #fff;
     font-family: sans-serif;
-    font-size: 5em;
+    font-size: 4em;
     position: relative; /* so that z-index works */
     z-index: 20;
     text-align: left;
     margin: 10%;
 }
 
+#bottom-content {
+	color: #fff;
+    font-family: sans-serif;
+    font-size: 4em;
+    position: relative; /* so that z-index works */
+    z-index: 20;
+    text-align: right;
+	
+}
 .carousel-control {
 		z-index: 30;
 	}
@@ -61,4 +145,19 @@ p {
     font-size: .5em;
     line-height: 1.1em;
     text-align: left;
+}
+
+.outer-container {
+	height: 500px;
+}
+
+.carousel-background {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-size: cover;
+	background-position: 50%;
+	z-index: 10;
 }
