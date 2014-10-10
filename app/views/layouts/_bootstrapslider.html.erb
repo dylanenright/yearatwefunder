@@ -1,50 +1,82 @@
-<div id="outer-outer-container">
-<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+<head>
 
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-  </ol>
-
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner">
-  	<div class="outer-container item active">
-      
-     	<div style="background-image:url(/images/wefunderteam.jpg)" class="carousel-background"></div>
-
-      	<div class="inner-container">
-		       <div class="col-md-6 col-lg-8">
-		        <div class="content">
-				        <h1>Wefunder</h1>
-				        <p><i>It's been 12 months since the SEC made it legal to invest on Wefunder.</i></p>
-				     </div>
-		      </div>
+</head>
+<body>
+<div class="overlay-content">
+	<div class="content">
+		<div  id="content-wefunderteam">
+		        <h1>Wefunder</h1>
+		        <p>It's been 12 months since the SEC made it legal to invest on Wefunder.</p>
 		</div>
-    </div>
 
-     <div class="outer-container item">
-
-      <div style="background-image:url(/images/batteryos.jpg)" class="carousel-background"></div>
-
-      	<div class="inner-container-yellow">
-		       <div class="col-md-6 col-lg-8">
-		        <div class="content">
-				        <h1>BatteryOS</h1>
-				        <p><i>Doubles the life of lithium ion batteries.</i></p>
-				     </div>
-		      </div>
+		<div class="factbox factbox-numbers" id"content-fundingnumbers">
+		        <h4>since 9/23/2013 raised</h4>
+		        <h3>$5.5M<h3>
+		        <h4>from</h4>
+		        <h3>347 investors</h3>
+		        <h4>for</h4>
+		        <h3>51 companies</h3>
 		</div>
-    </div>
-  </div>
+	</div>
+</div>
 
-  <!-- Controls -->
-  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left"></span>
-  </a>
-  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right"></span>
-  </a>
+<div>
+	<div class="wefunderteam-bg" data-0="opacity:1;" data-100p="opacity:0;"></div>
 </div>
+
+<div>
+<div class="facts1-bg" data-200p="opacity:1;" data-300p="opacity:0;"></div>
 </div>
+<div>
+<div class="map_country1-bg" data-300p="opacity:1;" data-350p="opacity:0;" ></div>
+</div>
+<div>
+<div class="map_country2-bg" data-350p="opacity:1;" data-800p="opacity:0;" ></div>
+</div>
+<div>
+<div class="map_country3-bg" data-600p="opacity:1;" data-800p="opacity:0;" ></div>
+</div>
+
+
+
+
+<script type="text/javascript" src="http://prinzhorn.github.io/skrollr/dist/skrollr.min.js"></script>
+    
+<script type="text/javascript">
+    var s = skrollr.init();
+</script>
+    
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+
+<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+<script type="text/javascript">
+skrollr.init({
+    smoothScrolling: true,
+    forceHeight: false
+
+});
+
+var maxWidth = $(window).width();
+var maxHeight = $(window).height();
+
+$(document).ready(function(){
+
+$(window).scroll(function() {
+	var posFromTop = $(window).scrollTop();
+
+	if(posFromTop > 400) {
+		$('#content-wefunderteam').fadeOut('slow');
+	} else if (posFromTop < 400) {
+		$('#content-wefunderteam').fadeIn('slow');	
+	}
+	else {
+	$('#content-wefunderteam').visible();
+	}
+
+});
+});
+</script>
+
+</body>
+

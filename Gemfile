@@ -28,3 +28,8 @@ gem 'spring',        group: :development
 
 gem 'bootstrap-sass'
 
+gem 'skrollr-rails', '~> 0.6.26'
+
+gem 'jquery-ui-rails'
+
+
