@@ -1,56 +1,507 @@
 <head>
+	<script type="text/JavaScript">
+function TimedRefresh( t ) {
 
+	 setTimeout("location.reload(true);", t);
+
+}
+</script>
 </head>
-<body>
-<div class="overlay-content">
-	<div class="content">
-		<div  id="content-wefunderteam">
-		        <h1>Wefunder</h1>
-		        <p>It's been 12 months since the SEC made it legal to invest on Wefunder.</p>
-		</div>
+<body onload="JavaScript:TimedRefresh(60000);">
+<div id="fullpage">
 
-		<div class="factbox factbox-numbers" id"content-fundingnumbers">
-		        <h4>since 9/23/2013 raised</h4>
-		        <h3>$5.5M<h3>
-		        <h4>from</h4>
-		        <h3>347 investors</h3>
-		        <h4>for</h4>
-		        <h3>51 companies</h3>
+<div class="overlay-content">
+	<div class="content carousel-caption">
+
+		
+				<div class="factbox factbox-numbers" id="content-fundingnumbers">
+		        	<h4>we've raised</h4>
+		        	<h3 id="fundingtotal">$5,500,000<h3>
+				</div>
+		
+			<img src="/images/dottedline-500.png" class="dotted-line">
+		
+			<div class="factbox">
+	        	<h4>for</h4>
+		     	<h3 id="companytotal">51 companies</h3>
+	    	</div>
+		
+	    <img src="/images/dottedline-500.png" class="dotted-line">
+		
+
+
+			<div class="factbox">
+	        	<h4>from</h4>
+		     	<h3 id="investortotal">347 investors</h3>
+	    	</div>
+	
+
+		<img src="/images/dottedline-500.png" class="dotted-line">
+		
+
+		
+			<div class="factbox country-numbers" >
+		        <h4>across</h4>
+		        <h3 id="countriestotal">29 countries</h3>
+			</div>
+		
+		<img src="/images/dottedline-500.png" class="dotted-line" id="double-dotted-lines">
+		
+			<div class="factbox">
+			        <h3 id="minutes">90 minutes</h3>
+			        <h4>Time it takes to begin raising from the crowd on Wefunder</h4>
+			</div>
+		
+
+		<img src="/images/dottedline-500.png" class="dotted-line">
+			
+				
+			<div class="factbox">
+		        <h3 id="averageraise">$71,263</h3>
+		        <h4>The average amount raised</h4>
+			</div>
+			
+
+		<img src="/images/dottedline-500.png" class="dotted-line">
+			
+		<li>
+			<div class="factbox">
+				<h4>for</h4>
+		        <h3 id="favorite">Some of our favorite companies...</h3>
+			</div>
+		</li>
 		</div>
 	</div>
 </div>
-
-<div>
-	<div class="wefunderteam-bg" data-0="opacity:1;" data-100p="opacity:0;"></div>
+	
 </div>
 
 <div>
-<div class="facts1-bg" data-200p="opacity:1;" data-300p="opacity:0;"></div>
+	<div class="slide" id="slide-1" data-anchor-target="#fundingtotal" data-0-start="opacity:1;" data-bottom-top="opacity:0;">
+
+	<div class="factbox" id="content-wefunderteam">
+		        <h1 id="yearone">Wefunder</h1>
+		        <h5>We're still waiting on the SEC - but it's been a great year.</h5>
+
+		</div>
+	</div>
 </div>
 <div>
-<div class="map_country1-bg" data-300p="opacity:1;" data-350p="opacity:0;" ></div>
-</div>
+	<div class="slide" id="slide-2" data-anchor-target="#fundingtotal" data-300-start="opacity:1;" data-center="opacity:0;" ></div>
+	</div>
 <div>
-<div class="map_country2-bg" data-350p="opacity:1;" data-800p="opacity:0;" ></div>
-</div>
+	<div class="slide" id="slide-3" data-anchor-target="#fundingtotal" data--100-bottom="opacity:1;" data-top="opacity:0;" ></div>
+	</div>
 <div>
-<div class="map_country3-bg" data-600p="opacity:1;" data-800p="opacity:0;" ></div>
+	<div class="slide" id="slide-4" data-anchor-target="#fundingtotal" data-top="opacity:1;" data--100-top="opacity:0;" ></div>
+	</div>
+<div>
+	<div class="slide" id="slide-5" data-anchor-target="#companytotal" data-center="opacity:1;" data-top="opacity:0;" ></div>
+	</div>
+<div>
+	<div class="slide" id="slide-6" data-anchor-target="#investortotal" data-bottom="opacity:1;" data-center="opacity:0;" ></div>
+	</div>
+<div>`
+	<div class="slide" id="slide-6" data-anchor-target="#investortotal" data-bottom="opacity:1;" data-top="opacity:0;" ></div>
+	</div>
+<div>
+	<div class="slide" id="slide-7" data-anchor-target="#investortotal" data-center="opacity:1;" data--100-top="opacity:0;" ></div>
+	</div>
+<div>
+ <div class="slide" id="slide-8" data-anchor-target="#countriestotal" data-bottom-top="opacity:1;" data-100-top="opacity:1;" data-top="opacity:0;" ></div>
 </div>
 
+<div>
+<div class="slide" id="slide-9" data-anchor-target="#minutes" data-bottom-top="opacity:1;" data-100-top="opacity:1;" data--100-top="opacity:0;" ></div>
+</div>
+
+
+<div>
+<div class="slide" id="slide-10" data-anchor-target="#averageraise" data-bottom-top="opacity:1;" data-top="opacity:1;" data--600-top="opacity:0;"></div>
+</div>
+
+
+<!--- COMPANIES-->
+
+
+<div>
+<div class="slide" id="slide-11" data-anchor-target="#favorite" data-center="opacity:1;" data--1000-top="opacity:1;" data--1200-top="opacity:0;">
+</div>
+</div>
+<div>
+<div class="company-caption caption-align-center-left" data-anchor-target="#favorite" data-top="opacity:0;" data--300-top="opacity:1;" data--900-top="opacity:1;" data--1000-top="opacity:0;">
+	<h1>BatteryOS</h1>
+	<h5>Doubles the life of lithium ion batteries</h5>
+</div>
+</div>
+
+
+<div>
+<div class="slide" id="slide-12" 
+data-anchor-target="#favorite" 
+data--1000-top="opacity:1;" 
+data--2400-top="opacity:1;" 
+data--2600-top="opacity:0;">
+</div>
+</div>
+<div>
+<div class="company-caption caption-align-center-left" data-anchor-target="#favorite" 
+data--1000-top="opacity:0;" 
+data--1400-top="opacity:1;" 
+data--2000-top="opacity:1;" 
+data--2100-top="opacity:0;">
+	<h1>Zenefits</h1>
+	<h5>HR made easy. 4100% unrealized return to date.</h5>
+</div>
+</div>
+
+
+
+<div>
+	<div class="slide" id="slide-13" 
+	data-anchor-target="#favorite" 
+	data--2500-top="opacity:1;" 
+	data--3700-top="opacity:1;" 
+	data--3900-top="opacity:0;">
+</div>
+</div>
+<div>
+	<div class="company-caption caption-align-center-left-bottom" 
+	data-anchor-target="#favorite" 
+	data--2400-top="opacity:0;" 
+	data--2800-top="opacity:1;" 
+	data--3400-top="opacity:1;" 
+	data--3500-top="opacity:0;">
+	<h1>Magnises</h1>
+	<h5>The coolest credit card anywhere.</h5>
+</div>
+</div>
+
+<div>
+	<div class="slide" id="slide-14" 
+	data-anchor-target="#favorite" 
+	data--4000-top="opacity:1;" 
+	data--5200-top="opacity:1;" 
+	data--5400-top="opacity:0;">
+</div>
+</div>
+<div>
+	<div class="company-caption caption-align-center-left-bottom" 
+	data-anchor-target="#favorite" 
+	data--3900-top="opacity:0;" 
+	data--4300-top="opacity:1;" 
+	data--4900-top="opacity:1;" 
+	data--5100-top="opacity:0;">
+	<h1>RealCrowd</h1>
+	<h5>Invest in commercial real-estate for as little as $5k </h5>
+</div>
+</div>
+
+
+<div>
+	<div class="slide" id="slide-15" 
+	data-anchor-target="#favorite" 
+	data--5500-top="opacity:1;" 
+	data--6700-top="opacity:1;" 
+	data--6900-top="opacity:0;">
+</div>
+</div>
+<div>
+	<div class="company-caption caption-align-center-left-bottom" 
+	data-anchor-target="#favorite" 
+	data--5400-top="opacity:0;" 
+	data--5800-top="opacity:1;" 
+	data--6400-top="opacity:1;" 
+	data--6600-top="opacity:0;">
+	<h1>Terrafugia</h1>
+	<h5>The first flying car. Seriously.</h5>
+</div>
+</div>
+
+<div>
+	<div class="slide" id="slide-16" 
+	data-anchor-target="#favorite" 
+	data--7000-top="opacity:1;" 
+	data--8200-top="opacity:1;" 
+	data--8400-top="opacity:0;">
+</div>
+</div>
+<div>
+	<div class="company-caption caption-align-center-left-bottom" 
+	data-anchor-target="#favorite" 
+	data--6900-top="opacity:0;" 
+	data--7300-top="opacity:1;" 
+	data--7900-top="opacity:1;" 
+	data--8100-top="opacity:0;">
+	<h1>Guesty</h1>
+	<h5>Your AirBNB managed.</h5>
+</div>
+</div>
+
+<div>
+	<div class="slide" id="slide-17" 
+	data-anchor-target="#favorite" 
+	data--8500-top="opacity:1;" 
+	data--9700-top="opacity:1;" 
+	data--9900-top="opacity:0;">
+</div>
+</div>
+<div>
+	<div class="company-caption caption-align-center-left-bottom" 
+	data-anchor-target="#favorite" 
+	data--8400-top="opacity:0;" 
+	data--8800-top="opacity:1;" 
+	data--9400-top="opacity:1;" 
+	data--9600-top="opacity:0;">
+	<h1>SourceEasy</h1>
+	<h5>Outsourcing apparel made easy.</h5>
+</div>
+</div>
+
+<div>
+	<div class="slide" id="slide-18" 
+	data-anchor-target="#favorite" 
+	data--10000-top="opacity:1;" 
+	data--11200-top="opacity:1;" 
+	data--11400-top="opacity:0;">
+</div>
+</div>
+<div>
+	<div class="company-caption caption-align-center-left-bottom" 
+	data-anchor-target="#favorite" 
+	data--9900-top="opacity:0;" 
+	data--10300-top="opacity:1;" 
+	data--10900-top="opacity:1;" 
+	data--11100-top="opacity:0;">
+	<h1>MotionSavvy</h1>
+	<h5>Now 38 Million deaf can ‘speak outloud’ in real-time.</h5>
+</div>
+</div>
+
+
+<div>
+	<div class="slide" id="slide-19" 
+	data-anchor-target="#favorite" 
+	data--11500-top="opacity:1;" 
+	data--12700-top="opacity:1;" 
+	data--12900-top="opacity:0;">
+</div>
+</div>
+<div>
+	<div class="company-caption caption-align-center-left-bottom" 
+	data-anchor-target="#favorite" 
+	data--11400-top="opacity:0;" 
+	data--11800-top="opacity:1;" 
+	data--12400-top="opacity:1;" 
+	data--12600-top="opacity:0;">
+	<h1>Bikanta</h1>
+	<h5>Nano-diamonds for cancer detection.</h5>
+</div>
+</div>
+
+<div>
+	<div class="slide" id="slide-20" 
+	data-anchor-target="#favorite" 
+	data--13000-top="opacity:1;" 
+	data--14200-top="opacity:1;" 
+	data--14400-top="opacity:0;">
+</div>
+</div>
+<div>
+	<div class="company-caption caption-align-center-left-bottom" 
+	data-anchor-target="#favorite" 
+	data--12900-top="opacity:0;" 
+	data--13300-top="opacity:1;" 
+	data--13900-top="opacity:1;" 
+	data--14100-top="opacity:0;">
+	<h1>Freight Farms</h1>
+	<h5>1 shipping container = 1 acre, 24/7 sun.</h5>
+</div>
+</div>
+
+<div>
+	<div class="slide" id="slide-21" 
+	data-anchor-target="#favorite" 
+	data--14500-top="opacity:1;" 
+	data--15700-top="opacity:1;" 
+	data--15900-top="opacity:0;">
+</div>
+</div>
+<div>
+	<div class="company-caption caption-align-center-left-bottom" 
+	data-anchor-target="#favorite" 
+	data--14400-top="opacity:0;" 
+	data--14800-top="opacity:1;" 
+	data--15400-top="opacity:1;" 
+	data--15600-top="opacity:0;">
+	<h1>Ginko Bioworks</h1>
+	<h5>The world's first organism engineering foundry.</h5>
+</div>
+</div>
+
+<div>
+	<div class="slide" id="slide-22" 
+	data-anchor-target="#favorite" 
+	data--16000-top="opacity:1;" 
+	data--16300-top="opacity:1;" 
+	data--16500-top="opacity:0;">
+</div>
+</div>
+
+<div>
+	<div class="slide" id="slide-23" 
+	data-anchor-target="#favorite" 
+	data--17500-top="opacity:1;"> 
+</div>
+</div>
+<div>
+	<div class="company-caption caption-align-center-left-bottom" 
+	data-anchor-target="#favorite" 
+	data--17400-top="opacity:0;" 
+	data--17800-top="opacity:1;">
+	<img src="/images/wefunderblueblue.jpg" class="company-caption caption-align-center-left-bottom">
+</div>
+</div>
+
+
+</div>
+</div>
+</div>
+</div>
 
 
 
 <script type="text/javascript" src="http://prinzhorn.github.io/skrollr/dist/skrollr.min.js"></script>
     
+
+
 <script type="text/javascript">
     var s = skrollr.init();
 </script>
     
 <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 
-<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+
 
 <script type="text/javascript">
+
+
+
+$(document).ready(function() {
+
+
+
+/* Scroll through using arrow keys
+
+
+$(document).ready(function() {
+function scrollToNew () {
+  scrollTop = $(window).scrollTop();
+  $('div').each(function(i, h3){ // loop through article headings
+    h3top = $(h3).offset().top; // get article heading top
+    if (scrollTop < h3top) { // compare if document is below heading
+      scrollTo('div', 2000); // scroll to in .8 of a second
+      console.log("hello");
+      return false; // exit function
+    }
+    else {
+    	console.log("vagina");
+    }
+   
+  });
+}
+
+
+
+ $(document).keydown(function (evt) {
+    if (evt.keyCode == 37) { // down arrow
+      evt.preventDefault(); // prevents the usual scrolling behaviour
+      scrollToNew(); // scroll to the next new heading instead
+      
+       return false;
+    }
+  });
+
+
+  $(document).keydown(function (evt) {
+    if (evt.keyCode == 38) { // down arrow
+      evt.preventDefault(); // prevents the usual scrolling behaviour
+      scrollToNew(); // scroll to the next new heading instead
+     
+       return false;
+    }
+  });
+
+
+ $(document).keydown(function (evt) {
+    if (evt.keyCode == 39) { // down arrow
+      evt.preventDefault(); // prevents the usual scrolling behaviour
+      scrollToNew(); // scroll to the next new heading instead
+     
+       return false;
+    }
+  });
+
+  $(document).keydown(function (evt) {
+    if (evt.keyCode == 40) { // down arrow
+      evt.preventDefault(); // prevents the usual scrolling behaviour
+      scrollToNew(); // scroll to the next new heading instead
+      }
+       else if (evt.keyCode == 38) { // up arrow
+      evt.preventDefault();
+      scrollToLast();
+    }
+    return false;
+  });
+
+});
+
+*/
+
+
+
+/*
+
+
+
+/* SKROLLLRRRRRRR */
+
+
+
+
+
+$(document).ready(function(){
+	var body = document.body,
+	html = document.documentElement;
+
+	var height = Math.max( body.scrollHeight, body.offsetHeight,
+						html.clientHeight, html.scrollHeight, html.offsetHeight );
+	var scrollHeight = document.body.scrollTop;
+	
+
+         var screenheight = parseInt($(document).height());
+         var scrolledpx = parseInt($(window).scrollTop());     
+         var sum = screenheight+scrolledpx;
+   $(document).scroll(function(){      
+         console.log($(window).scrollTop());
+         console.log("screen: " + screenheight);
+         console.log("scroll: " + scrolledpx);
+	});
+	
+     $('body,html').animate({scrollTop: 20000}, 75000); 
+     console.log("animate");
+
+     
+
+ 		
+
+});
+
 skrollr.init({
     smoothScrolling: true,
     forceHeight: false
@@ -60,22 +511,24 @@ skrollr.init({
 var maxWidth = $(window).width();
 var maxHeight = $(window).height();
 
-$(document).ready(function(){
 
 $(window).scroll(function() {
 	var posFromTop = $(window).scrollTop();
 
-	if(posFromTop > 400) {
-		$('#content-wefunderteam').fadeOut('slow');
-	} else if (posFromTop < 400) {
+if(posFromTop > 200) {
+$('#content-wefunderteam').fadeOut('slow');
+} else if (posFromTop < 400) {
 		$('#content-wefunderteam').fadeIn('slow');	
-	}
+}
 	else {
 	$('#content-wefunderteam').visible();
 	}
 
 });
+
+
 });
+
 </script>
 
 </body>
