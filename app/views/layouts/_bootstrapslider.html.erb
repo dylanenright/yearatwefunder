@@ -1,13 +1,14 @@
 <head>
-	<script type="text/JavaScript">
+	<!--<script type="text/JavaScript">
 function TimedRefresh( t ) {
 
 	 setTimeout("location.reload(true);", t);
 
 }
 </script>
+-->
 </head>
-<body onload="JavaScript:TimedRefresh(135000);">
+<body>
 <div id="fullpage">
 
 <div class="overlay-content">
@@ -31,8 +32,8 @@ function TimedRefresh( t ) {
 
 
 			<div class="factbox">
-	        	<h4>from</h4>
-		     	<h3 id="investortotal">347 investors</h3>
+	        	<h4>from a pool of</h4>
+		     	<h3 id="investortotal">32,975 investors</h3>
 	    	</div>
 	
 
@@ -57,7 +58,7 @@ function TimedRefresh( t ) {
 			
 				
 			<div class="factbox">
-		        <h3 id="averageraise">$71,263</h3>
+		        <h3 id="averageraise">$114,583</h3>
 		        <h4>The average amount raised</h4>
 			</div>
 			
@@ -384,8 +385,8 @@ data--2100-top="opacity:0;">
 	<div class="slide" id="slide-24" 
 	data-anchor-target="#favorite" 
 	data--19000-top="opacity:1;" 
-	data--20200-top="opacity:1;" 
-	data--20400-top="opacity:0;">
+	data--22000-top="opacity:1;" 
+	data--22000-top="opacity:0;">
 </div>
 </div>
 <div>
@@ -541,6 +542,27 @@ function scrollToNew () {
 
 
 $(document).ready(function(){
+	var scrollHeight = document.body.scrollTop;
+     $('body').animate({scrollTop: 25000}, 200000); 
+     console.log("animate");
+     console.log($(window).scrollTop());
+
+ $(document).scroll(function(){
+ if ($(window).scrollTop() < 1) {
+ 	$('body').animate({scrollTop: 25000}, 200000); 
+ }
+ 	else if
+
+ 	($(window).scrollTop() >= 25000) { 
+		 	$('body,html').animate({scrollTop: 0}, 10000);
+		 	console.log("move to top");
+		 }		
+
+	      
+         console.log($(window).scrollTop());
+       });	 
+
+/*
 	var body = document.body,
 	html = document.documentElement;
 
@@ -557,15 +579,8 @@ $(document).ready(function(){
          console.log("screen: " + screenheight);
          console.log("scroll: " + scrolledpx);
 	});
-	
-     $('body,html').animate({scrollTop: 30000}, 150000); 
-     console.log("animate");
-
-     
-
- 		
-
-});
+*/
+	});
 
 skrollr.init({
     smoothScrolling: true,
