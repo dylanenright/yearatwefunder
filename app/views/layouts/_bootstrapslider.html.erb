@@ -543,17 +543,17 @@ function scrollToNew () {
 
 $(document).ready(function(){
 	var scrollHeight = document.body.scrollTop;
-     $('body').animate({scrollTop: 25000}, 200000); 
+     $('body').animate({scrollTop: 24800}, 200000); 
      console.log("animate");
      console.log($(window).scrollTop());
 
  $(document).scroll(function(){
  if ($(window).scrollTop() < 1) {
- 	$('body').animate({scrollTop: 25000}, 200000); 
+ 	$('body').animate({scrollTop: 24800}, 200000); 
  }
  	else if
 
- 	($(window).scrollTop() >= 25000) { 
+ 	($(window).scrollTop() >= 24800) { 
 		 	$('body,html').animate({scrollTop: 0}, 10000);
 		 	console.log("move to top");
 		 }		
